@@ -8,6 +8,20 @@
     --mainTransition: all 0.3s linear;
 }
 
+.test {
+    margin: 30px;
+    padding: 5px;
+    width: 300px;
+    height: 100px;
+    border: 5px solid grey;
+    outline: 8px solid lightgreen;
+    outline-offset: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    color: blue;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -209,7 +223,7 @@ body {
     transition: var(--mainTransition);
     background: rgb(240, 157, 81, 0.5);
     z-index: 2;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 .cart {
