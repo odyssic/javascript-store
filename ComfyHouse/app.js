@@ -7,7 +7,7 @@ const client = contentful.createClient({
     accessToken: 'eo_f_SDV_JHMgwmd5jD83iJwJ_vtAqQk9X2wA3Lx_mA'
 })
 
-console.log(client)
+// console.log(client)
 
 //variables
 
@@ -30,14 +30,19 @@ let buttonsDOM = [];
 class Products {
     async getProducts() {
         try {
-            let result = await fetch("products.json");
-            let data = await result.json();
 
-            let products = data.items;
+            let contentful = await client.getEntries({ content_type: 'comfyHouseProduct' })
+
+
+            let result = await fetch("products.json");
+            // let data = await result.json();
+
+            let products = contentful.items;
+            console.log({ products })
             products = products.map(item => {
                 const { title, price } = item.fields;
                 const { id } = item.sys;
-                const image = item.fields.image.fields.file.url;
+                const image = item.fields.image[0].fields.file.url;
                 return { title, price, id, image };
             });
             return products;
