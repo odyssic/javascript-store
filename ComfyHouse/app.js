@@ -1,3 +1,14 @@
+// contentful setup
+
+// const contentful = require("contentful")
+const client = contentful.createClient({
+
+    space: 'ogh1k4w97vq7',
+    accessToken: 'eo_f_SDV_JHMgwmd5jD83iJwJ_vtAqQk9X2wA3Lx_mA'
+})
+
+console.log(client)
+
 //variables
 
 const cartBtn = document.querySelector(".cart-btn");
