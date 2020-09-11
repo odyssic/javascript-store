@@ -85,10 +85,11 @@ body {
 
 .hero {
     min-height: calc(100vh - 60px);
-    background: url("./images/hero-bcg.jpeg") center/cover no-repeat;
+    background: url("images/monarch-5-background.png") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-position: top 100px;
 }
 
 .banner {
