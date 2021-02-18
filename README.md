@@ -1,10 +1,13 @@
-# javaScript Store
+#Classic Typewriter Store Cart
 
-A store interface with cart and products page powered by vanilla javascript. 
+A beautiful store interface with cart and products page powered by vanilla javascript. 
 
-Created to practice advanced javascript functions. 
+The cart functions, keeps track of contents and cart total. 
 
-Products are stored via Contentful
+The products are stored on Contentful headless CMS. 
+
+I restore vintage typewriters as a business (classictypewriter.com), so I thought I woudl create a typewriter site. 
+
 
 
 
